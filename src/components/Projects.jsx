@@ -116,9 +116,9 @@ const Projects = () => {
 		<div
 			id='projects'
 			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2 flex-col'>
-			<div className='max-w-[1240px] w-full p-2 flex flex-col h-screen justify-center items-center space-y-20'>
+			<div className='max-w-[1240px] w-full p-2 flex flex-col h-screen justify-center items-center space-y-10 md:space-y-20'>
 				<div className='w-full max-w-[1240px]'>
-					<h2 className='mb-10'>Websites I've built</h2>
+					<h2 className='mb-2 md:mb-10'>Websites I've built</h2>
 
 					<div className='flex flex-wrap justify-between relative '>
 						<div className="py-[5px] pr-[30px] before:content-[' '] before:w-[60px] before:h-[60px] before:border-r-black before:border-r-2 before:border-t-black before:border-t-2 before:absolute before:left-[130px] before:top-[-2px]">
