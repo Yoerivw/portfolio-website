@@ -16,7 +16,7 @@ const Main = () => {
 					</h1>
 					<h1 className='py-2 text-gray-700'>A front-end Web Developer</h1>
 					<p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-						I&apos;m focussed on building responsive front-end web applications
+						I&apos;m focused on building responsive front-end web applications
 						I&apos;ve always had a passion for technology and computers and
 						decided to learn how to make simple websites which turned into some
 						freelance gigs.

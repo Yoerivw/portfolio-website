@@ -11,19 +11,10 @@ const Projects = () => {
 			link: "www.bergmanross.co.za",
 
 			tools: [
-				{ name: "WordPress", imageName: "wordpress" },
-				{
-					name: "HTML",
-					imageName: "html",
-				},
-				{
-					name: "CSS",
-					imageName: "css",
-				},
-				{
-					name: "JS",
-					imageName: "javascript",
-				},
+				{ id: 1, name: "WordPress", imageName: "wordpress" },
+				{ id: 2, name: "HTML", imageName: "html" },
+				{ id: 3, name: "CSS", imageName: "css" },
+				{ id: 4, name: "JS", imageName: "javascript" },
 			],
 		},
 	]);
@@ -36,21 +27,12 @@ const Projects = () => {
 			{
 				title: "Jade Tavern",
 				text: "Jade Tavern is a chinese / sushi restaurant in the Southern Suburbs. After the hard lockdown they were in need of an online ordering system. I developed a website for them and integrated a 3rd party tool to handle the ordering functionality.",
-				link: "www.jadetavern.co.za",
+				link: "https://www.jadetavern.co.za/",
 				tools: [
-					{ name: "WordPress", imageName: "wordpress" },
-					{
-						name: "HTML",
-						imageName: "html",
-					},
-					{
-						name: "CSS",
-						imageName: "css",
-					},
-					{
-						name: "JS",
-						imageName: "javascript",
-					},
+					{ id: 1, name: "WordPress", imageName: "wordpress" },
+					{ id: 2, name: "HTML", imageName: "html" },
+					{ id: 3, name: "CSS", imageName: "css" },
+					{ id: 4, name: "JS", imageName: "javascript" },
 				],
 			},
 		]);
@@ -64,21 +46,12 @@ const Projects = () => {
 			{
 				title: "Bergman Ross & partners",
 				text: "Bergman Ross and Partners is a large radiological company.  Their main goal was to create an online booking functionality on their website.  The project included the development the of their entire website, including the booking functionality, as well as the maintenance thereof.",
-				link: "www.bergmanross.co.za",
+				link: "https://www.bergmanross.co.za/",
 				tools: [
-					{ name: "WordPress", imageName: "wordpress" },
-					{
-						name: "HTML",
-						imageName: "html",
-					},
-					{
-						name: "CSS",
-						imageName: "css",
-					},
-					{
-						name: "JS",
-						imageName: "javascript",
-					},
+					{ id: 1, name: "WordPress", imageName: "wordpress" },
+					{ id: 2, name: "HTML", imageName: "html" },
+					{ id: 3, name: "CSS", imageName: "css" },
+					{ id: 4, name: "JS", imageName: "javascript" },
 				],
 			},
 		]);
@@ -93,18 +66,9 @@ const Projects = () => {
 				text: "CW Attorneys is an attorney office specializing in immigration. Their main goal was to enable prospective clients to more easily find contact information and service offerings during lockdown. I built out a design and created a GMB for easy directions.",
 				link: "https://www.chriswentzelattorneys.co.za/",
 				tools: [
-					{
-						name: "HTML",
-						imageName: "html",
-					},
-					{
-						name: "CSS",
-						imageName: "css",
-					},
-					{
-						name: "JS",
-						imageName: "javascript",
-					},
+					{ id: 1, name: "HTML", imageName: "html" },
+					{ id: 2, name: "CSS", imageName: "css" },
+					{ id: 3, name: "JS", imageName: "javascript" },
 				],
 			},
 		]);
@@ -120,20 +84,20 @@ const Projects = () => {
 				<p className=' font-bold'>Tools Used:</p>
 				<div className='flex flex-row space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-2'>
 					{project.tools.map((tool) => {
-						const url = `/../public/assets/skill-icons/${tool.imageName}.png`;
+						const url = `../../public/skill-icons/${tool.imageName}.png`;
+						let count = 0;
 						return (
-							<>
-								<div className='text-center'>
-									{/* <Image src={url} width={32} height={32} alt='/' /> */}
+							<li key={tool.id} className='text-center list-none'>
+								<img src={url} alt='/' className='w-[48px] h-[48px]' />
 
-									<p>{tool.name}</p>
-								</div>
-							</>
+								{tool.name}
+							</li>
 						);
 					})}
 				</div>
 				<a
 					href={project.link}
+					target='_blank'
 					className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
 					View Site
 				</a>
@@ -152,6 +116,7 @@ const Projects = () => {
 					<div className="py-[5px] pr-[30px] before:content-[' '] before:w-[60px] before:h-[60px] before:border-r-black before:border-r-2 before:border-t-black before:border-t-2 before:absolute before:left-[130px] before:top-[-2px]">
 						<ul className='text-lg leading-loose min-w-[160px]'>
 							<li
+								key='brp'
 								id='brp'
 								onClick={onBrpClick}
 								className={`${
@@ -162,6 +127,7 @@ const Projects = () => {
 								BRP Radiologists
 							</li>
 							<li
+								key='jade'
 								id='jade'
 								onClick={onJadeClick}
 								className={`${
@@ -172,6 +138,7 @@ const Projects = () => {
 								Jade Tavern
 							</li>
 							<li
+								key='cwa'
 								id='cwa'
 								onClick={onCwaClick}
 								className={`${
