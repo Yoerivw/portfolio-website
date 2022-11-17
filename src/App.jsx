@@ -6,7 +6,7 @@ import "./index.css";
 
 function App() {
 	return (
-		<div className='pt-4 px-8 overflow-y-scroll h-screen scroll-smooth snap-y snap-mandatory'>
+		<div className='pt-4 sm-px-20 px-12 overflow-y-scroll h-screen scroll-smooth snap-y snap-mandatory'>
 			<Main />
 			<Projects />
 			<Skills />

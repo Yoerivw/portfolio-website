@@ -10,10 +10,14 @@ import react from "../../public/skill-icons/react.png";
 import sql from "../../public/skill-icons/sql-server.png";
 import tailwind from "../../public/skill-icons/tailwind.png";
 import wp from "../../public/skill-icons/wordpress.png";
+import { CgScrollV } from "react-icons/cg";
 
 const Skills = () => {
 	return (
 		<div id='skills' className='w-full h-screen p-2 snap-start'>
+			<div className='rounded-full shadow-sm shadow-gray-400 px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
+				<CgScrollV size={48} />
+			</div>
 			<div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
 				<p className='text-xl tracking-widest uppercase text-[#5651e5'>
 					Skills

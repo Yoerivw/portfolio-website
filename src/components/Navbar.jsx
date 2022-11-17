@@ -32,16 +32,16 @@ const Navbar = () => {
 			<div className='flex justify-end md:justify-center items-center w-full h-full pr-14 md:px-2 2xl:px-16'>
 				<div>
 					<ul style={{ color: "#1f2937" }} className='hidden md:flex'>
-						<li href='/#home'>
+						<li href='#home'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
 						</li>
 
-						<li href='/#projects'>
+						<li href='#projects'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>
 								Projects
 							</li>
 						</li>
-						<li href='/#skills'>
+						<li href='#skills'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
 						</li>
 					</ul>

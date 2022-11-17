@@ -3,6 +3,7 @@ import html from "../../public/skill-icons/html.png";
 import css from "../../public/skill-icons/css.png";
 import wp from "../../public/skill-icons/wordpress.png";
 import javascript from "../../public/skill-icons/javascript.png";
+import { CgScrollV } from "react-icons/cg";
 
 /* const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms)); */
 
@@ -86,7 +87,7 @@ const Projects = () => {
 				</h3>
 				<p className='transition-opacity max-w-[550px] pb-8 '>{project.text}</p>
 				<p className=' font-bold'>Tools Used:</p>
-				<div className='flex flex-row space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-2'>
+				<div className='flex flex-row space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-6'>
 					{project.tools.map((tool) => {
 						return (
 							<li key={tool.id} className='text-center list-none'>
@@ -104,7 +105,7 @@ const Projects = () => {
 				<a
 					href={project.link}
 					target='_blank'
-					className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+					className='bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded'>
 					View Site
 				</a>
 			</>
@@ -114,49 +115,54 @@ const Projects = () => {
 	return (
 		<div
 			id='projects'
-			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2'>
-			<div className='max-w-[1240px] w-screen mx-auto px-2 py-14'>
-				<h2 className='mb-10'>Websites I've built</h2>
+			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2 flex-col'>
+			<div className='max-w-[1240px] w-full p-2 flex flex-col h-screen justify-center items-center space-y-20'>
+				<div className='w-full max-w-[1240px]'>
+					<h2 className='mb-10'>Websites I've built</h2>
 
-				<div className='flex flex-column flex-wrap justify-between relative'>
-					<div className="py-[5px] pr-[30px] before:content-[' '] before:w-[60px] before:h-[60px] before:border-r-black before:border-r-2 before:border-t-black before:border-t-2 before:absolute before:left-[130px] before:top-[-2px]">
-						<ul className='text-lg leading-loose min-w-[160px]'>
-							<li
-								key='brp'
-								id='brp'
-								onClick={onBrpClick}
-								className={`${
-									activeProject == "brp"
-										? "underline rounded p-2 text-indigo-500 transition ease-in-out delay-450"
-										: "p-2"
-								}`}>
-								BRP Radiologists
-							</li>
-							<li
-								key='jade'
-								id='jade'
-								onClick={onJadeClick}
-								className={`${
-									activeProject == "jade"
-										? "underline p-2 text-indigo-500 rounded-md transition ease-in-out delay-250"
-										: "p-2"
-								}`}>
-								Jade Tavern
-							</li>
-							<li
-								key='cwa'
-								id='cwa'
-								onClick={onCwaClick}
-								className={`${
-									activeProject == "cwa"
-										? "underline text-indigo-500 rounded-xl p-2 transition ease-in-out delay-50"
-										: "p-2"
-								}`}>
-								CW Attorneys
-							</li>
-						</ul>
+					<div className='flex flex-wrap justify-between relative '>
+						<div className="py-[5px] pr-[30px] before:content-[' '] before:w-[60px] before:h-[60px] before:border-r-black before:border-r-2 before:border-t-black before:border-t-2 before:absolute before:left-[130px] before:top-[-2px]">
+							<ul className='text-lg leading-loose min-w-[160px]'>
+								<li
+									key='brp'
+									id='brp'
+									onClick={onBrpClick}
+									className={`${
+										activeProject == "brp"
+											? "underline rounded p-2 text-indigo-500 transition ease-in-out delay-450"
+											: "p-2"
+									}`}>
+									BRP Radiologists
+								</li>
+								<li
+									key='jade'
+									id='jade'
+									onClick={onJadeClick}
+									className={`${
+										activeProject == "jade"
+											? "underline p-2 text-indigo-500 rounded-md transition ease-in-out delay-250"
+											: "p-2"
+									}`}>
+									Jade Tavern
+								</li>
+								<li
+									key='cwa'
+									id='cwa'
+									onClick={onCwaClick}
+									className={`${
+										activeProject == "cwa"
+											? "underline text-indigo-500 rounded-xl p-2 transition ease-in-out delay-50"
+											: "p-2"
+									}`}>
+									CW Attorneys
+								</li>
+							</ul>
+						</div>
+						<div className='pt-10 md:pt-0'>{tools}</div>
 					</div>
-					<div>{tools}</div>
+				</div>
+				<div className='rounded-full shadow-sm shadow-gray-400 px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
+					<CgScrollV size={48} />
 				</div>
 			</div>
 		</div>
