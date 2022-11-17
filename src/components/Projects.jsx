@@ -16,10 +16,10 @@ const Projects = () => {
 			link: "www.bergmanross.co.za",
 
 			tools: [
-				{ id: 1, name: "WordPress", imageName: wp },
 				{ id: 2, name: "HTML", imageName: html },
 				{ id: 3, name: "CSS", imageName: css },
 				{ id: 4, name: "JS", imageName: javascript },
+				{ id: 1, name: "WordPress", imageName: wp },
 			],
 		},
 	]);
@@ -34,10 +34,10 @@ const Projects = () => {
 				text: "Jade Tavern is a chinese / sushi restaurant in the Southern Suburbs. After the hard lockdown they were in need of an online ordering system. I developed a website for them and integrated a 3rd party tool to handle the ordering functionality.",
 				link: "https://www.jadetavern.co.za/",
 				tools: [
-					{ id: 1, name: "WordPress", imageName: wp },
 					{ id: 2, name: "HTML", imageName: html },
 					{ id: 3, name: "CSS", imageName: css },
 					{ id: 4, name: "JS", imageName: javascript },
+					{ id: 1, name: "WordPress", imageName: wp },
 				],
 			},
 		]);
@@ -53,10 +53,10 @@ const Projects = () => {
 				text: "Bergman Ross and Partners is a large radiological company.  Their main goal was to create an online booking functionality on their website.  The project included the development the of their entire website, including the booking functionality, as well as the maintenance thereof.",
 				link: "https://www.bergmanross.co.za/",
 				tools: [
-					{ id: 1, name: "WordPress", imageName: wp },
 					{ id: 2, name: "HTML", imageName: html },
 					{ id: 3, name: "CSS", imageName: css },
 					{ id: 4, name: "JS", imageName: javascript },
+					{ id: 1, name: "WordPress", imageName: wp },
 				],
 			},
 		]);
@@ -87,7 +87,7 @@ const Projects = () => {
 				</h3>
 				<p className='transition-opacity max-w-[550px] pb-8 '>{project.text}</p>
 				<p className=' font-bold'>Tools Used:</p>
-				<div className='flex flex-row space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-6'>
+				<div className='flex flex-row space-x-6 md:space-x-12 mt-4 mb-8 border-l-2 border-l-gray-300 pl-2 sm:pl-6 text-center'>
 					{project.tools.map((tool) => {
 						return (
 							<li key={tool.id} className='text-center list-none'>
@@ -158,7 +158,7 @@ const Projects = () => {
 								</li>
 							</ul>
 						</div>
-						<div className='pt-10 md:pt-0'>{tools}</div>
+						<div className='pt-2 md:pt-0'>{tools}</div>
 					</div>
 				</div>
 				<div className='rounded-full shadow-sm shadow-gray-400 px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
