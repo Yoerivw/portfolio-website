@@ -16,9 +16,9 @@ const Skills = () => {
 	return (
 		<div id='skills' className='w-full h-screen p-2 snap-start'>
 			<div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-				<div className='invisible md:visible px-1 cursor-pointer hover:scale-110 ease-in duration-300 w-max mx-auto'>
+				{/* <div className='invisible md:visible px-1 cursor-pointer hover:scale-110 ease-in duration-300 w-max mx-auto'>
 					<CgScrollV size={48} />
-				</div>
+				</div> */}
 				<p className='text-lg sm:text-xl tracking-widest uppercase text-[#5651e5'>
 					Skills
 				</p>

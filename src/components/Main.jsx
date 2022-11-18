@@ -25,16 +25,26 @@ const Main = () => {
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-							<FaLinkedinIn />
+							<a href='https://www.linkedin.com/in/yoerivw/' target='_blank'>
+								<FaLinkedinIn />
+							</a>
 						</div>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-							<FaGithub />
+							<a href='https://github.com/Yoerivw/' target='_blank'>
+								<FaGithub />
+							</a>
 						</div>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-							<AiOutlineMail />
+							<a href='mailto:yoerivw@hotmail.com' target='_blank'>
+								<AiOutlineMail />
+							</a>
 						</div>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-							<BsFillPersonLinesFill />
+							<a
+								href='https://www.dropbox.com/s/mpnwmnvr7jjvvvd/Yoeri%20CV.pdf?dl=0'
+								target='_blank'>
+								<BsFillPersonLinesFill />
+							</a>
 						</div>
 					</div>
 				</div>

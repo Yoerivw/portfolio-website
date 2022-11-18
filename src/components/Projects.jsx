@@ -161,9 +161,9 @@ const Projects = () => {
 						<div className='pt-2 md:pt-0'>{tools}</div>
 					</div>
 				</div>
-				<div className='invisible md:visible px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
+				{/* <div className='invisible md:visible px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
 					<CgScrollV size={48} />
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
