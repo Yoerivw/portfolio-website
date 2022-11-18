@@ -82,7 +82,7 @@ const Projects = () => {
 	const tools = projectText.map((project) => {
 		return (
 			<>
-				<h3 className='text-2xl mb-5 b-5 transition-transform underline'>
+				<h3 className='mb-5 b-5 transition-transform underline'>
 					{project.title}
 				</h3>
 				<p className='transition-opacity max-w-[550px] pb-8 '>{project.text}</p>
@@ -94,7 +94,7 @@ const Projects = () => {
 								<img
 									src={tool.imageName}
 									alt='/'
-									className='w-[48px] h-[48px]'
+									className='w-[24px] h-[24px] md:w-[48px] md:h-[48px]'
 								/>
 
 								{tool.name}
@@ -115,7 +115,7 @@ const Projects = () => {
 	return (
 		<div
 			id='projects'
-			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2 flex-col'>
+			className='w-full h-screen snap-start flex items-center text-gray-700 mb-2 flex-col py-5'>
 			<div className='max-w-[1240px] w-full p-2 flex flex-col h-screen justify-center items-center space-y-10 md:space-y-20'>
 				<div className='w-full max-w-[1240px]'>
 					<h2 className='mb-2 md:mb-10'>Websites I've built</h2>
