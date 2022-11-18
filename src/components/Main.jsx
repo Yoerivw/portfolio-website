@@ -42,8 +42,10 @@ const Main = () => {
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 							<a
 								href='https://www.dropbox.com/s/mpnwmnvr7jjvvvd/Yoeri%20CV.pdf?dl=0'
-								target='_blank'>
-								<BsFillPersonLinesFill />
+								target='_blank'
+								className='font-bold'>
+								{/* <BsFillPersonLinesFill /> */}
+								CV
 							</a>
 						</div>
 					</div>
