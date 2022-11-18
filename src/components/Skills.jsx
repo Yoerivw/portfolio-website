@@ -16,14 +16,14 @@ const Skills = () => {
 	return (
 		<div id='skills' className='w-full h-screen p-2 snap-start'>
 			<div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-				<div className='rounded-full shadow-sm shadow-gray-400 px-1 cursor-pointer hover:scale-110 ease-in duration-300 w-max mx-auto'>
+				<div className='invisible md:visible px-1 cursor-pointer hover:scale-110 ease-in duration-300 w-max mx-auto'>
 					<CgScrollV size={48} />
 				</div>
 				<p className='text-lg sm:text-xl tracking-widest uppercase text-[#5651e5'>
 					Skills
 				</p>
 				<h2 className='py-4'>What I can do</h2>
-				<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-16 gap-y-8 sm:gap-x-6 sm:gap-y-6 md:gap-8'>
+				<div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-12 gap-y-4 sm:gap-x-6 sm:gap-y-6 md:gap-8'>
 					<div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
 						<div className='grid grid-cols-2 gap-0 md:gap-4 justify-center items-center'>
 							<div className='m-auto'>
@@ -137,7 +137,7 @@ const Skills = () => {
 						</div>
 					</div>
 				</div>
-				<h2 className='py-6'>What I'm tinkering with</h2>
+				<h2 className='pt-10 py-6'>What I'm tinkering with</h2>
 				<div className='grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-8'>
 					<div className='p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
 						<div className='grid grid-cols-2 gap-0 md:gap-4 justify-center items-center'>

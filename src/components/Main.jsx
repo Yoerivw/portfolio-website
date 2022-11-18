@@ -38,9 +38,9 @@ const Main = () => {
 						</div>
 					</div>
 				</div>
-				<div className='rounded-full shadow-sm shadow-gray-400 px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
+				{/* <div className='invisible md:visible rounded-full px-1 cursor-pointer hover:scale-110 ease-in duration-300'>
 					<CgScrollV size={48} />
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
